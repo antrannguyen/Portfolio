@@ -1,0 +1,22 @@
+@import '../../assests/styles/main';
+
+.about {
+  height: 50vh;
+  width: auto;
+  text-align: center;
+  margin: 5% 15%;
+  &__title {
+    color: $blackColor;
+    padding-bottom: 3%;
+    font-size: 32px;
+    font-family: $fontFamilyHelloSentence;
+    font-weight: normal;
+  }
+  &__content {
+    font-size: 30px;
+    font-family: $fontFamilyAboutContent;
+    word-spacing: 10px;
+    line-height: 50px;
+    // font-weight: normal;
+  }
+}

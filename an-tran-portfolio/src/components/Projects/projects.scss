@@ -1,32 +1,13 @@
 @import '../../assests/styles/main';
 
-// .projects {
-//   background-color: #dcdcdc;
-//   display: flex;
-//   justify-content: space-around;
-//   &__title {
-//     font-size: 28px;
-//     font-family: $fontFamilyHelloSentence;
-//     font-weight: normal;
-//   }
-//   &__titleContent {
-//     font-size: 10px;
-//     font-family: $fontFamilyAboutContent;
-//     font-weight: normal;
-//   }
-// }
-
 .projects {
-  background-color: silver;
-  // background-color: #fff3ea;
+  background-color: rgb(148, 137, 139);
 
   border-radius: 10px;
   height: 90vh;
-  // margin: 5%;
   h2 {
     font-family: $fontFamilyAboutContent;
-    // color: #778899;
-    color: #0b2635;
+    color: white;
     opacity: 90%;
     font-size: 35px;
     padding: 45px;

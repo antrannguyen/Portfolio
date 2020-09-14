@@ -9,8 +9,9 @@ const Project = () => {
   return (
     <section title='Projects' className='projects'>
       <h2 className='titleSection'>My Highlight </h2>
-      <div className='projects__children'>
-        {getDataProjects.map((i) => {
+      <div className='projects__parallelogram'>
+      {/* <div className='projects__children'> */}
+        {/* {getDataProjects.map((i) => {
           return (
             <article key={i.id} className='projects__article'>
               <h3>{i.title}</h3>
@@ -18,7 +19,8 @@ const Project = () => {
               <button id={i.id}>VIEW PROJECT</button>
             </article>
           );
-        })}
+        })} */}
+      {/* </div> */}
       </div>
     </section>
   );

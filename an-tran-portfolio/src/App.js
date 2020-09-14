@@ -14,11 +14,11 @@ export default class App extends Component {
       <div className='App'>
         <Header />
         <About />
-        {/* <Project /> */}
+        <Project />
         {/* <TechStack /> */}
         {/* <Blogs /> */}
-        {/* <Contact /> */}
-        {/* <Footer /> */}
+        <Contact />
+        <Footer />
         {/* <Contact /> */}
       </div>
     );

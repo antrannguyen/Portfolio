@@ -30,10 +30,19 @@
   font-weight: 400;
   line-height: 1.7;
   color: #777;
-
-  padding: 20rem 0;
+    padding: 0rem 0;
     background-color: #242734;
     background-size: cover;
+
+  position: relative;
+  width: 100%;
+
+  //   background-image: linear-gradient(
+  //     to right bottom,
+  //     rgba(#242734, 0.8),
+  //     rgba(white, 0.8)),
+  // url('../../assests/pictures/Computer4.jpg');
+  // background-size: cover;
     transform: skewY(-7deg);
     margin-top: -10rem;
     border-radius: 1rem;
@@ -44,9 +53,29 @@
         padding: 10rem 0;
     }
 
+    &__title{
+      margin-left: 15%;
+  // margin-right: 15%;
+      color: $blackColor;
+    padding-bottom: 1rem;
+    font-size: 22px;
+    font-weight: normal;
+    border-bottom: 5px solid;
+    border-color: $hoverColor;
+    width: 35%;
+    margin: 4em 0 2em;
+    text-transform: uppercase;
+    }
+
   &__row {
     max-width: 114rem;
-    margin: 0 auto;
+    margin: 0 15%;
+    // z-index: 1;
+    // bottom: 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 0.1fr);
+    gap: 4%;
 
     &:not(:last-child) {
         margin-bottom: 8rem;
@@ -74,7 +103,6 @@
                 margin-bottom: 6rem;
             }
         }
-
         @include respond(tab-port) {
             width: 100% !important;
         }
@@ -83,13 +111,16 @@
   }
 
   &__boxes{
-    background-color: rgba(#E2A24D, .8);
+    background-color: rgba(#333645, .8);
+   
     font-size: 1.5rem;
-    padding: 2.5rem;
+    padding: 2rem 1.5em;
     text-align: center;
     border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+    // box-shadow: 0 1.5rem 4rem rgba(#000, .15);
     transition: transform .3s;
+    margin: 0 0 2rem 0;
+    // grid-auto-rows: minmax(100px, auto);
 
   @include respond(tab-port) {
       padding: 2rem;
@@ -105,16 +136,24 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 1.5rem !important;
+  color: #E2A24D;
+  text-align: left;
 }
 
 .text {
   margin: 0;
   font-size: 1.5;
-  text-align: center;
+  text-align: left;
+  color: #E2A24D;
+
 
 }
 
-.col-1-of-3 {
-  // width: calc((100% - 2 * 6rem) / 3);
-  width: calc((100% - 3 * 8rem) / 3);
+.img {
+  background-size: cover;
+  object-fit: cover;
+}
+.con {
+  margin: 14% auto;
+  position: relative;
 }

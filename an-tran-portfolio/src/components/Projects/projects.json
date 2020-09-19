@@ -3,7 +3,7 @@
     {
       "link": "http://localhost:3000/",
       "title": "The title one",
-      "content": " Lorem Ipsum lorem Lorem Ipsum lorem  Lorem Ipsum lorem  ",
+      "content": " Lorem Ipsum lorem Lorem Ipsum lorem  Lorem Ipsum lorem ",
       "id": 1
     },
     {
@@ -15,34 +15,26 @@
     {
       "link": "http://localhost:3000/",
       "title": "The title three",
-      "content": "Lorem Ipsum lorem Lorem Ipsum lorem Lorem Ipsum lorem Lorem Ipsum lorem Lorem Ipsum lorem Lorem Ipsum lorem  ",
+      "content": "Lorem Ipsum lorem Lorem Ipsum lorem Lorem Ipsum lorem ",
       "id": 3
-    }
-  ],
-  "projectFront": [
-    {
-      "link": "http://localhost:3000/",
-      "name": "About",
-      "img": "../../assests/pictures/Computer1.jpg",
-      "lang": "JavaScrips",
-      "altPicture": "Picture",
-      "id": 1
     },
     {
       "link": "http://localhost:3000/",
-      "name": "Resume",
-      "img": "../../assests/pictures/Computer1.jpg",
-      "lang": "JavaScrips",
-      "altPicture": "Picture",
-      "id": 2
+      "title": "The title one",
+      "content": " Lorem Ipsum lorem Lorem Ipsum lorem  Lorem Ipsum lorem  ",
+      "id": 4
     },
     {
       "link": "http://localhost:3000/",
-      "name": "Project",
-      "img": "../../assests/pictures/Computer1.jpg",
-      "lang": "JavaScrips",
-      "altPicture": "Picture",
-      "id": 3
+      "title": "The title two",
+      "content": "Lorem Ipsum lorem Lorem Ipsum lorem  Lorem Ipsum lorem  ",
+      "id": 5
+    },
+    {
+      "link": "http://localhost:3000/",
+      "title": "The title three",
+      "content": "Lorem Ipsum lorem Lorem Ipsum lorem Lorem Ipsum lorem ",
+      "id": 6
     }
   ]
 }

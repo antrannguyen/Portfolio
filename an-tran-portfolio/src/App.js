@@ -17,8 +17,8 @@ export default class App extends Component {
         <Project />
         {/* <TechStack /> */}
         {/* <Blogs /> */}
-        {/* <Contact /> */}
-        {/* <Footer /> */}
+        <Contact />
+        <Footer />
         {/* <Contact /> */}
       </div>
     );

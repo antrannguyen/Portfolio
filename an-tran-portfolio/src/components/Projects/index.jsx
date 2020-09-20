@@ -1,54 +1,54 @@
 import React from 'react';
 import './projects.scss';
-import p1 from '../../assests/pictures/Computer4.jpg';
-import p2 from '../../assests/pictures/Computer4.jpg';
-import p3 from '../../assests/pictures/Computer4.jpg';
-import p4 from '../../assests/pictures/Computer4.jpg';
-import p5 from '../../assests/pictures/Computer4.jpg';
-import p6 from '../../assests/pictures/Computer4.jpg';
+import p1 from '../../assests/pictures/integrify.png';
+import p2 from '../../assests/pictures/ecommerce.png';
+import p3 from '../../assests/pictures/countriesList.png';
+import p4 from '../../assests/pictures/annine.png';
+import p5 from '../../assests/pictures/italianRecipe.png';
+import p6 from '../../assests/pictures/budgetApp.png';
 
 const pictures = [p1, p2, p3, p4, p5, p6]
 const Projects = [
   {
-    "link": "http://localhost:3000/",
-    "title": "The title one",
-    "content": " Lorem Ipsum lorem Lorem Ipsum lorem  Lorem Ipsum lorem ",
+    "link": "https://www.integrify.io/",
+    "title": "Integrify Oy",
+    "content": "Gatsby, React, TypeScript",
     "image": p1,
     "id": 1
   },
   {
-    "link": "http://localhost:3000/",
-    "title": "The title two",
-    "content": "Lorem Ipsum lorem Lorem Ipsum lorem  Lorem Ipsum lorem  ",
-    "image": p1,
+    "link": "https://github.com/antrannguyen/E-Commerce-project",
+    "title": "E-commercce",
+    "content": "MERN stack, TypeScript ",
+    "image": p2,
     "id": 2
   },
   {
-    "link": "http://localhost:3000/",
-    "title": "The title three",
-    "content": "Lorem Ipsum lorem Lorem Ipsum lorem Lorem Ipsum lorem ",
-    "image": p1,
+    "link": "https://countries-page.netlify.app/",
+    "title": "Country Shop",
+    "content": "React, Redux Thunk/Saga",
+    "image": p3,
     "id": 3
   },
   {
-    "link": "http://localhost:3000/",
-    "title": "The title one",
-    "content": " Lorem Ipsum lorem Lorem Ipsum lorem  Lorem Ipsum lorem  ",
-    "image": p1,
+    "link": "https://github.com/antrannguyen",
+    "title": "Annine Shop",
+    "content": "WordPress",
+    "image": p4,
     "id": 4
   },
   {
-    "link": "http://localhost:3000/",
-    "title": "The title two",
-    "content": "Lorem Ipsum lorem Lorem Ipsum lorem  Lorem Ipsum lorem  ",
-    "image": p1,
+    "link": "https://github.com/antrannguyen/Italian-cuisine-recipe",
+    "title": "Italian Recipe",
+    "content": "JavaScript",
+    "image": p5,
     "id": 5
   },
   {
-    "link": "http://localhost:3000/",
-    "title": "The title three",
-    "content": "Lorem Ipsum lorem Lorem Ipsum lorem Lorem Ipsum lorem ",
-    "image": p1,
+    "link": "https://antrannguyen.github.io/BudgetApp/?fbclid=IwAR3ungadBPYevyPzbgMqBDOf-F2YDrZpBOsbyXzvJz4nRM6mWsmVAlkZu-0",
+    "title": "Budget App",
+    "content": "JavaScript",
+    "image": p6,
     "id": 6
   }
 ]
@@ -56,22 +56,30 @@ const Projects = [
 const Project = () => {
   return (
     <div className="con">
-    <section title='Projects' className='projects'>
-      <h2 className="projects__title"> Title</h2>
+      <div className='con__title-div'>
+      <h2 className="con__title"> MY PROJECTS</h2>
+      </div>
+    {/* <section title='Projects' className='projects'> */}
+
       <div className='projects__row'>
+      {/* <div className='row'> */}
+
         {Projects.map((i) => {
           console.log(i)
           return (
+            <a href={i.link}>
             <article key={i.id} className='projects__boxes'>
               <h3 className='heading-tertiary'>{i.title}</h3>
               <p className='text'>{i.content}</p>
-              <img src={i.image} alt='project' width='300px'/>
+              {/* <img className='boxes__img' src={i.image} alt='project' width='250px'/> */}
+              <img className='boxes__img' src={i.image} alt='project' width='100%'/>
 
             </article>
+            </a>
           );
         })}
       </div>
-    </section>
+    {/* </section> */}
     </div>
   );
 };

@@ -1,37 +1,29 @@
 import React from 'react';
 import './header.scss';
-import dataHeader from './header.json';
 import headerImage from '../../assests/pictures/Computer4.jpg';
-import Navbar from '../Navbar/nav';
-
-// Get data of Navigation
-const getDataHeader = dataHeader.nav;
 
 const Header = () => {
   return (
-    <div> 
-<Navbar />
+    <div>
       <nav>
         <ul>
-          {getDataHeader.map((i) => {
-            return (
-              <li key={i.id}>
-                <a href={i.link}>{i.label}</a>
-              </li>
-            );
-          })}
+          <a href='https://antranportfolio.web.app/'>
+            <i class='fab fas fa-arrow-alt-circle-right fa-2x'></i>
+          </a>
+          <a href='https://www.linkedin.com/in/an-tran-650b2199/'>
+            <i class='fab fa-linkedin fa-2x'></i>
+          </a>
+          <a href='https://github.com/antrannguyen'>
+            <i class='fab fa-github-square fa-2x'></i>
+          </a>
         </ul>
       </nav>
-    <div className='header'>
-      <img
-        className='header__img'
-        src={headerImage}
-        alt='d'
-      />
-      <div className='header__hi'>
-        <h1> Hey, I am An Tran</h1>
+      <div className='header'>
+        <img className='header__img' src={headerImage} alt='d' />
+        <div className='header__hi'>
+          <h1> Hey, I am An Tran</h1>
+        </div>
       </div>
-    </div>
     </div>
   );
 };

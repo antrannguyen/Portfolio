@@ -1,0 +1,42 @@
+{
+  "nav": [
+    { "link": "http://localhost:3000/", "label": "About", "id": 1 },
+    { "link": "http://localhost:3000/", "label": "Resume", "id": 2 },
+    { "link": "http://localhost:3000/", "label": "Project", "id": 3 },
+    { "link": "http://localhost:3000/", "label": "Contact", "id": 5 }
+  ], 
+  "about":[
+    {
+      "title": " As a developer", 
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting
+    industry. Lorem Ipsum has been the industry's standard dummy text ever
+    since the 1500s, when an unknown printer took a galley of type and
+    scrambled it to make a type specimen book. It has survived not only
+    five centuries, but also the leap into electronic typesetting,
+    remaining essentially unchanged."
+  }
+  ], 
+  "blogs": [
+    {
+      "img": "process.env.PUBLIC_URL + '/Computer3.jpg'",
+      "title": "Content of the title 1",
+      "date": "15.07.2020",
+      "content": " Lorem Ipsum lorem ",
+      "id": 1
+    },
+    {
+      "img": "process.env.PUBLIC_URL + '/Computer2.jpg'",
+      "title": "Content of the title 2",
+      "date": "15.07.2020",
+      "content": "Lorem Ipsum lorem ",
+      "id": 2
+    },
+    {
+      "img": "process.env.PUBLIC_URL + '/Computer2.jpg'",
+      "title": "Content of the title 3",
+      "date": "15.07.2020",
+      "content": "Lorem Ipsum lorem ",
+      "id": 3
+    }
+  ]
+}
